@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Access Trojan</title>
+</head>
+
+<body>
+A RAT (remote access Trojan) is malware an attacker uses to gain full administrative privileges and remote control of a target computer. RATs are often downloaded along with seemingly legitimate user-requested programs such as video games, or are sent to their target as an email attachment via a phising email.
+<br> <br>
+  
+  Some variants of Remote Access control are:
+  Sakula: is a seemingly benign software with a legitimate digital signature, yet it allows attackers complete remote administration capabilities over a machine. Uses simple, unencrypted HTTP requests to communicate with its control server. It leverages the mimikatz password stealer to perform authentication using a pass the hash technique, which reuses operating system authentication hashes to hijack existing sessions.
+  <br> <br>
+  
+  KjW0rm: is a worm written in VBS, which makes it difficult to detect on Windows machines. It also uses obfuscation to avoid detection by antivirus. It is silently deployed and then opens a backdoor that lets attackers take full control over a machine and send data back to the C&C server.
+  <br> <br>
+  
+  Havex: is a RAT that targets industrial control systems (ICS). It grants attackers full control over industrial machinery. Havex uses several mutations to avoid detection and has a minimal footprint on the victim device. It communicates with the C&C server over HTTP and HTTPS.
+  <br> <br>
+  
+  Agent.BTZ/ComRat: (also called Uroburos) is another RAT targeting ICS, which is thought to have been developed by the Russian government. It is deployed via phishing attacks, and uses encryption, anti-analysis and forensic techniques to avoid detection. It provides full administrative control over an infected machine, and can exfiltrate data back to its C&C server. me
+  <br> <br>
+  
+  Dark Comet: was first identified in 2011 and is still actively used. It grants full administrative control over infected machines, and can disable Task Manager, firewall, and user access control (UAC) on Windows machines. Dark Comet uses encryption to evade detection by antivirus.
+  <br> <br>
+  
+  AlienSpy is a RAT that targets Apple OS X and macOS platforms. It collects information about the target system, activates the webcam, and securely connects to the C&C server to enable complete control over the machine. AlienSpy uses anti-analysis techniques to detect the presence of virtual machines.
+  <br> <br>
+  
+  The Heseber BOT: is based on VNC, a traditional remote access tool. It uses VNC to provide remote control over the targeted machine and transfer data to the C&C server. However, it does not grant administrative access over the machine unless the user has those permissions. Because VNC is a legitimate tool, Haseber cannot be detected by many antivirus tools.
+  <br> <br>
+  
+  Sub7: is a RAT that operates in a client-server model. The server is the component deployed on a victim machine, and the client is a GUI used by the attacker to control the remote system. The server attempts to install itself into the Windows directory. Once deployed, Sub7 enables webcam capture, port redirects, chat, and provides an easy-to-use registry editor. 
+  <br> <br>
+  
+  Back Orifice: is a remote access program for Windows, supporting most versions since Windows 95. It is deployed as a server on a target machine, which has a small footprint, and allows a GUI-based client operated by an attacker to gain complete control over the system. It can be used to control multiple computers in parallel using imaging techniques. The server communicates with its client via TCP or UDP. It typically runs on port 31337.
+
+</body>
+
+</html>
